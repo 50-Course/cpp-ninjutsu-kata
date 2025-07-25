@@ -11,5 +11,12 @@ int main() {
   // to dispay a message on the command line
   std::cout << "Hello, World!";
 
+  int age = 0;
+
+  std::cout << "\nEnter your age: ";
+  // reads the user input from the command line
+  // and stores it in the variable 'age'
+  std::cin >> age;
+
   return 0; // zero indicates a successful execution
 }
