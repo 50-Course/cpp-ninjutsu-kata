@@ -7,8 +7,15 @@
 // behold, the enums, the guardians of clarity,
 //
 // in C++, we define them with:
+// enum class which is more modern and type-safe, compared to the older `enum`
+// declartaion
+//
+// we could also use `enum struct` which is a C++11 feature, to define
+// strongly typed enumerations.
 
-enum MONTHS { JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC };
+enum MONTH { JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC };
+
+enum class Status : int { SUCCESS = 0, FAILURE = 1, PENDING = 2 };
 
 #include <iostream>
 
@@ -31,8 +38,6 @@ int main() {
   } else {
     return 1; // exit the program if it's not July
   }
-
-  // checks if the month
 
   return 0;
 }
