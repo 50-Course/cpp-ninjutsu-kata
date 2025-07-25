@@ -14,5 +14,14 @@ using namespace std; // here we, tell the compiler to assume we are using the
 
 int main() {
   cout << "Hello world, let's breath some C++";
+  int year = 2025;
+  cout << "\nIts year: " << year;
+
+  // prints the size of an integer
+  cout << "The size of int is: " << sizeof(int) << " bytes" << endl;
+
+  // so intesting the size of a boolean is 1 bytes
+  cout << "\nThe size  of bool is:  " << sizeof(bool) << " bytes" << endl;
+
   return 0;
 }
